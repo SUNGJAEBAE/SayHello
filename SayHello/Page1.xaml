@@ -10,5 +10,22 @@
     <Page.Resources>
         <c:TwiceConverter x:Key="twiceConv"/>
     </Page.Resources>
-    <Label Content="{Binding Speed, Converter={StaticResource twiceConv}}"/>
+    <ListBox ItemsSource="{Binding}">
+        <ListBox.ItemTemplate>
+            <DataTemplate>
+                <StackPanel>
+                    <TextBlock Text="Speed"/>
+                    <TextBlock Text="{Binding Speed}"/>
+                    <Slider Value="{Binding Speed}" Maximum="100"/>
+                    <TextBlock Text="Color"/>
+                    <Border Height="10">
+                        <Border.Background>
+                            <SolidColorBrush Color="{Binding Color}"/>
+                        </Border.Background>
+                    </Border>
+                    <TextBox Text="{Binding Color}"/>
+                </StackPanel>
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+    </ListBox>
 </Page>

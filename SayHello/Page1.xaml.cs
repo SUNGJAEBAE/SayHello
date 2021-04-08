@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLogic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,15 +26,21 @@ namespace SayHello
         {
             InitializeComponent();
              test= new Test();
-            DataContext = test;
+            var cars = new List<Car>();
+            for(int i=0; i<10; i++)
+            {
+                cars.Add(new Car() { Speed = i * 10 });
+            }
+            DataContext = cars;
+
         }
     }
     public class Test
     {
-        public string Speed { get; set; }
+        public int Speed { get; set; }
         public Test()
         {
-            Speed = "10";
+            Speed = 10;
         }
     }
 }

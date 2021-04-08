@@ -9,7 +9,7 @@
       Title="Menu">
 
     <Grid>
-        <Button Content="Products" HorizontalAlignment="Left" Margin="126,142,0,0" VerticalAlignment="Top" Height="115" Width="142"/>
+        <Button Content="Products" HorizontalAlignment="Left" Margin="126,142,0,0" VerticalAlignment="Top" Height="115" Width="142" Click="Button_Click_2"/>
         <Button Content="Live support" HorizontalAlignment="Left" Margin="357,142,0,0" VerticalAlignment="Top" Height="115" Width="142" Click="Button_Click_1"/>
         <Button Content="Email support" HorizontalAlignment="Left" Margin="571,142,0,0" VerticalAlignment="Top" Height="115" Width="142" Click="Button_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="220,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="79" Width="416" FontSize="24" FontStyle="Italic"><Run Language="ko-kr" Text="Adventure works"/></TextBlock>
